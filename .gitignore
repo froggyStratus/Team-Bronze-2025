@@ -1,0 +1,5 @@
+# Ignore VSCode files
+
+.vscode/
+
+*.log
