@@ -41,32 +41,137 @@
 								<article>
 									<header>
 										<h2>Team Bio</h2>
-										<p>All content, all the time.</p>
+										<p>Meet the team!</p>
 									</header>
 
-									<span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+									
+									<!-- Source for text formatting from W3 Schools
+									 	https://www.w3schools.com/css/css_align.asp -->
+									<!-- Source for containers and boxes
+									 https://stackoverflow.com/questions/62122402/how-do-i-create-3-columns-with-responsive-text-and-images -->
 
-									<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-									consequat etiam lorem ipsum dolor sit amet nullam.</p>
+									<!-- removed "flex-wrap: wrap;" from containter, but it can be added back if we want mobile friendly-->
+									<head>
+										<style>
 
-									<h3>And Yet Another Subheading</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-									justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-									ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-									vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-									Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-									rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-									Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-									Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+										.center {
+											text-align: center;
+											border: 3px solid rgb(0, 0, 0);
+											margin-left: 350px;
+											margin-right: 350px;
+										}
 
-									<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-									quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-									Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-									fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-									Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-									Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+										.container{
+											display:flex;
+											flex-direction: row;
+											justify-content: center;
+											align-items: center;
+											flex-wrap: wrap;
+										}
+										
+										.box{
+											display:flex;
+											flex-direction: column;
+											align-items: center;
+											justify-content: center;
+											max-width:28rem;
+											min-width:18rem;
+											margin: 10px;
+											text-align: center;
+										}
+
+										h1{
+											font-size: 1.2em;
+											margin: 1px;
+										}
+
+										/*W3 schools for the win again:
+										https://www.w3schools.com/css/css_font_size.asp  */
+										h6{
+											font-size: 1em;
+										}
+
+										
+
+										
+										</style>
+									</head>
+
+									<!-- Asia's Bio-->
+									<div style="text-align: center;">
+										<img src="images/asia_pic-modified.png" alt="" width="200" height="200"/>
+										<h1>Asia Gillispie</h1>
+										<h6>Project Lead / Front-End Developer</h6>
+									</div>
+
+									<div class = center>
+									<p>Asia is a senior at Old Dominion University pursuing a Bachelor’s degree in Computer Science. 
+										She got her Associates degree in Computer Science at Tidewater Community College and then transferred to ODU. 
+										Her interests include doing art in different mediums and playing video games.</p>
+									</div>
+									
+									<!-- Everyone else-->
+									<!-- Source for text border formatting:
+									  https://www.computerhope.com/issues/ch001392.htm -->
+
+									<div class="container">
+										<div class="box">
+											<img src="images/jaylen_pic-modified.png" alt="" width="200" height="200"/>
+											<h1>Jaylen Wheeler</h1>
+											<h6>Back-End Developer / Documentation Specialist</h6>
+											<p style="border-width:3px; border-style:solid; border-color:#000000;">Jaylen Wheeler is a senior at Old Dominion University pursuing a Bachelor's degree in Computer Science. 
+												He is from Smithfield, Virginia, and currently works at Old Dominion University's Computer Science Undergraduate Resource Center as a tutor and plans on pursuing a Master's 
+												degree in Computer Science after graduation. 
+												His free time consists of playing video games and watching anime.</p>
+										</div>
+										<div class="box">
+											<img src="images/hadeel_pic-modified.png" alt="" width="200" height="200"/>
+											<h1>Hadeel Qaiymah</h1>
+											<h6>Software Developer</h6>
+											<p style="border-width:3px; border-style:solid; border-color:#000000;">Hadeel is currently pursuing a Bachelor’s degree in Computer Science at Old Dominion University, studying online from Richmond, Virginia. 
+												She holds an Associate's degree in Computer Science from Brightpoint Community College. Born in Jordan, she is proud to be trilingual, fluent in Arabic, English, and Turkish. 
+												An athlete and a dedicated gym enthusiast, she is passionate about personal growth and cultural appreciation.</p>
+										</div>
+										<div class="box">
+											<img src="images/roman_pic-modified.png" alt="" width="200" height="200"/>
+											<h1>Roman Pena</h1>
+											<h6>Webmaster / Software Developer</h6>
+											<p style="border-width:3px; border-style:solid; border-color:#000000;">Roman Pena is a senior at ODU working towards his bachelors in computer science. 
+												In his free time he enjoys playing tennis, listening to music, and all kinds of design. 
+												He is from chesapeake but now lives in virgina beach.</p>
+										</div>
+									  </div>
+
+
+
+
+									  <div class="container">
+										<div class="box">
+											<img src="images/mike_pic-modified.png" alt="" width="200" height="200"/>
+											<h1>Michael Nguyen</h1>
+											<h6>Database Specialist</h6>
+											<p style="border-width:3px; border-style:solid; border-color:#000000;">Michael Nguyen is a senior pursuing his bachelors degree in computer science. 
+												He transferred from Tidewater Community College after getting his associate degrees in computer science. 
+												He likes to workout, dance, and hang out with friends when he's free.</p>
+										</div>
+										<div class="box">
+											<img src="images/andrew_pic-modified.png" alt="" width="200" height="200"/>
+											<h1>Andrew Benham</h1>
+											<h6>Software Developer / Back-End Developer</h6>
+											<p style="border-width:3px; border-style:solid; border-color:#000000;">Andrew Benham is from Sterling, VA. he is currently a Senior at Old Dominion University pursuing a bachelors degree in Computer Science. 
+												He is a Computer Science tutor at Old Dominion University. 
+												In his free time he likes to workout and play video games.</p>
+										</div>
+										<div class="box">
+											<img src="images/chase_pic-modified.png" alt="" width="200" height="200"/>
+											<h1>Chase Murray</h1>
+											<h6>Software Developer</h6>
+											<p style="border-width:3px; border-style:solid; border-color:#000000;">Chase Murray is [REDACTED]. He if from [REDACTED]. His interests include [REDACTED].</p>
+										</div>
+									  </div>
+
+
+									
 								</article>
 
 						</div>
