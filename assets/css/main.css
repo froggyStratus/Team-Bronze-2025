@@ -2783,7 +2783,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #37c0fb;
+				color: #474747;
 				border-bottom-color: transparent;
 			}
 
@@ -2797,7 +2797,7 @@ input, select, textarea {
 		}
 
 			#footer .icons a {
-				color: #999;
+				color: #ffffff;
 			}
 
 				#footer .icons a:hover {
