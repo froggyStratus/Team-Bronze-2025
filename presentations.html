@@ -42,6 +42,61 @@
 						<div id="content">
 							<style>
 								h2 {text-align: center;}
+
+								/* sources: 
+								https://www.shecodes.io/athena/8356-align-images-horizontally-with-equal-space-in-html-css#:~:text=By%20setting%20the%20parent%20element,And%20that's%20it!
+								https://stackoverflow.com/questions/42080123/controlling-the-amount-of-space-in-justify-content-space-between
+								https://stackoverflow.com/questions/13195081/how-to-remove-the-dotted-line-around-the-clicked-a-element-in-html*/
+								
+								.image-row {
+									display: flex;
+									justify-content: center; 
+								  }
+
+								.button-icon {
+									width: 200px; 
+									height: 150px;
+									margin-right: 8px; 
+									display:block;
+								  }
+
+								  .button {
+									position: relative;
+									padding: 0;
+									font-size: 25px;
+									background-color: #EEEEEE;
+									border: none;
+									color: white;
+									cursor: pointer;
+									display: inline-flex;
+									flex-direction: column;  
+									align-items: center;     
+									justify-content: center;
+									overflow:hidden;
+									text-decoration: none;
+									margin-left: 75px;
+									margin-right: 75px;
+								  }
+
+								  
+								  .button-link {
+									text-decoration: none;
+									display: inline-block; 
+								  }
+
+								  .button span {
+									text-align: center; 
+									margin: 0; 
+								  }
+
+								  a, a:active, a:focus {
+									outline: none;
+									border-bottom-color: transparent; /* I spent a *very* long time searching for this specific line as a solution to a problem I encountered */
+								 }
+								  
+
+								 
+
 							</style>
 
 							<!-- Content -->
@@ -95,6 +150,58 @@
 									<iframe src="https://drive.google.com/file/d/1eTc-mq9rLG4Lj6lHUvJzYnjTcoCurBjy/preview" width="960" height="569" allow="autoplay"></iframe>
 									</p>
 
+									<h2>Individual Labs</h2>
+									<div class = "container" align-content="space-evenly" >
+										<div class = "image-row">
+											
+											<a href="images/Lab1-Jaylen_Wheeler.pdf">
+											<button class="button">
+												<img src="images/paper_icon.png" alt="Icon" class="button-icon">
+												<span>Jaylen Wheeler</span>
+											</button>
+											</a>
+
+											<a href="images/Lab1-Asia_Gillispie.pdf">
+												<button class="button">
+													<img src="images/paper_icon.png" alt="Icon" class="button-icon">
+													<span>Asia Gillispie</span>
+												</button>
+											</a>
+
+											<a href="images/Lab1-Roman_Pena.pdf">
+												<button class="button">
+													<img src="images/paper_icon.png" alt="Icon" class="button-icon">
+													<span>Roman Pena</span>
+												</button>
+											</a>
+										</div>
+										<br>
+										<br>
+										<div class = "image-row">
+											
+											<a href="images/Lab1-Andrew_Benham.pdf">
+											<button class="button">
+												<img src="images/paper_icon.png" alt="Icon" class="button-icon">
+												<span>Andrew Benham</span>
+											</button>
+											</a>
+
+											<a href="images/Lab1-Mike_Nguyen.pdf">
+												<button class="button">
+													<img src="images/paper_icon.png" alt="Icon" class="button-icon">
+													<span>Mike Nguyen</span>
+												</button>
+											</a>
+
+											<a href="images/Lab1-Hadeel-Qaiymah.pdf">
+												<button class="button">
+													<img src="images/paper_icon.png" alt="Icon" class="button-icon">
+													<span>Hadeel Qaiymah</span>
+												</button>
+											</a>
+										</div>
+
+									</div>
 									</article>
 
 						</div>
